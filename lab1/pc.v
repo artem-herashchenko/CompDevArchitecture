@@ -9,7 +9,7 @@ always @(posedge i_clk, negedge i_rst_n) begin
         o_pc <= 32'd0;
     end 
     else begin
-        o_pc <= i_pc + 1'b1;    
+        o_pc = i_pc;    
     end
 end
    
